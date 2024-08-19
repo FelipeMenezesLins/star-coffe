@@ -93,6 +93,7 @@ nav div {
 nav div#procurar span{
     margin:0px 5px;
     cursor:pointer;
+    font-size:36px;
 }
 
 nav div.cadastro {
@@ -130,6 +131,7 @@ nav div#carrinho {
 nav div#m-1 span {
     margin:0px 5px;
     cursor:pointer;
+    font-size:36px;
 }
 
 /*Menu configurações*/
@@ -434,12 +436,107 @@ div.email {
     background-color:var(--cor2);
     color:white;
 }
+/*Entrega ou Retirada*/ 
+
+div.position {
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+div.position > span {
+    position: absolute;
+    top:20%;
+    left:90%;
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+div#aparecer {
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:450px;
+    background-color:white;
+    border-radius:10px;
+    padding:10px;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.331);
+    transform: translate(-50%, -50%);
+}
+
+div.botoes-2 input {
+    margin:5px;
+    font-size:1.1em;
+    padding:10px;
+    border-radius:20px;
+    background-color:lightgray;
+    border:0px;
+    cursor: pointer;
+}
+
+div.subs {
+    background-color:--;
+    padding:10px;
+    width:100%;
+    margin:10px 0px;
+    border-radius:5px;
+    display:none;
+}
+
+div.subs input {
+    margin:10px auto;
+    font-size:1.2em;
+    width:100%;
+    padding:10px;
+    border-radius:20px;
+    background-color:var(--cor2);
+    color:white;
+    border:0px;
+    cursor: pointer;
+}
+
+div#localizacao {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:lightgray;
+    padding:10px;
+    border-radius:5px;
+    margin:10px 0px;
+    cursor: pointer;
+}
+
+div#agendar {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:lightgray;
+    padding:10px;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+div.timer {
+    display:flex;
+    align-items:center;
+}
+
+div.timer div {
+    margin-left:10px;
+    color:rgb(85, 84, 84);
+}
+
+div.timer div h3 {
+    color:black;
+    font-size:1em;
+}
 
 /*Conteúdo principal*/ 
 main {
     max-width:600px;
     border-radius:5px;
-    margin:10px auto;
+    margin:auto;
     background-color:rgb(232, 232, 232);
     padding:10px;
 }

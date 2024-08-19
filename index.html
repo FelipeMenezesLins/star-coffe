@@ -43,8 +43,8 @@
             <div class="botoes">
                 <p>Rua Gregório Luchiari São Manoel Americana SP</p>
                 <p>Telefone: (19)xxxx-xxxx</p>
-                <input type="button" name="entre" id="entrega" value="Entrega">
-                <input type="button" name="entre" id="retirada" value="Retirada">
+                <input type="button" name="entre" class="entrega" value="Entrega">
+                <input type="button" name="entre" class="retirada" value="Retirada">
             </div>
         </div>
     </header>
@@ -71,7 +71,7 @@
                             <img src="imagens/Instagram-Black-Logo-PNG.png">
                         </a>
                         <a href="#">
-                            <img src="imagens/black-facebook-icon.png.crdownload">
+                            <img src="">
                         </a>
                     </li>
                 </ul>
@@ -87,35 +87,42 @@
             <input type="text" name="pes" id="pesquisa" placeholder="Pesquisa">
             <ul>
                 <li>
-                    <a href="#">Bebidas Geladas 
+                    <a href="#inverno" class="ancora">Lançamentos do inverno 
                     <span class="material-symbols-outlined">
                          arrow_forward
                     </span>
                     </a>
                 </li>
                 <li>
-                    <a href="#"> Hasbaccino
+                    <a href="#" class="ancora">Bebidas Geladas 
                     <span class="material-symbols-outlined">
                          arrow_forward
                     </span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">Bebidas Quentes 
+                    <a href="#" class="ancora"> Hasbaccino
                     <span class="material-symbols-outlined">
                          arrow_forward
                     </span>
                     </a>
                 </li>
                 <li>
-                    <a href="#"> Sanduíches
+                    <a href="#" class="ancora">Bebidas Quentes 
                     <span class="material-symbols-outlined">
                          arrow_forward
                     </span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">Salgados 
+                    <a href="#" class="ancora"> Sanduíches
+                    <span class="material-symbols-outlined">
+                         arrow_forward
+                    </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="ancora">Salgados 
                     <span class="material-symbols-outlined">
                          arrow_forward
                     </span>
@@ -198,64 +205,138 @@
                 arrow_forward_ios
             </span>
         </div>
-        <div class="categorias">
-            <h2>Lançamentos do inverno</h2>
-            <div class="container">
-                <div class="title-food">
-                    <h3>Brownie</h3>
-                </div>
-                <div class="food-img-2">
-                    <p>Um brownie de chocolate denso e úmido, com uma crosta levemente crocante por fora e um interior rico e macio. Cada pedaço traz um sabor intenso de cacau, derretendo na boca e deixando um toque suave de doçura. Perfeito para acompanhar um café ou como uma sobremesa indulgente, é o tipo de doce que satisfaz qualquer desejo por chocolate.</p>
-                    <img src="imagens/brownie.jpg">
-                </div>
-                <div class="valor-food">
-                    <p>Valor:  $12,00</p>
-                <span class="material-symbols-outlined">add</span>
+        <div class="lupa">
+            <div class="position">
+                <span class="material-symbols-outlined" id="fecha">
+                    close
+                </span>
+                <div id="aparecer">
+                    <div class="botoes-2">
+                        <input type="button" value="Entregar" class="entrega">
+                        <input type="button" value="Retirada" class="retirada">
+                    </div>
+                    <div class="subs">
+                       <div id="localizacao">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <p>Insira sua localização ou endereço</p>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                       </div>
+                       <div id="agendar">
+                        <div class="timer">
+                            <span class="material-symbols-outlined">
+                                timer
+                            </span>
+                            <div>
+                                <h3>Agendamento</h3>
+                                <p>Cerca de 40min-1h24</p>
+                            </div>
+                        </div>
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                       </div>
+                       <input type="button" value="Confirmar">
+                    </div>
+                    <div class="subs">
+                        <div id="localizacao">
+                            <div class="timer">
+                                <span class="material-symbols-outlined">
+                                    store
+                                </span>
+                                <div>
+                                    <h3>Endereço</h3>
+                                    <p>Rua Gorgino Carioba Americana</p>
+                                </div>
+                            </div>
+                            <span class="material-symbols-outlined">
+                                north_east
+                            </span>
+                        </div>
+                           <div id="agendar">
+                            <div class="timer">
+                                <span class="material-symbols-outlined">
+                                    timer
+                                </span>
+                                <div>
+                                    <h3>Retirar</h3>
+                                    <p>Em 20min</p>
+                                </div>
+                            </div>
+                            <span class="material-symbols-outlined">
+                                chevron_right
+                            </span>
+                           </div>
+                           <input type="button" value="Confirmar">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="title-food">
-                    <h3>Donauts</h3>
+        </div>      
+        <div id="inverno">
+            <div class="categorias">
+                <h2>Lançamentos do inverno</h2>
+                <div class="container">
+                    <div class="title-food">
+                        <h3>Brownie</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p>Um brownie de chocolate denso e úmido, com uma crosta levemente crocante por fora e um interior rico e macio. Cada pedaço traz um sabor intenso de cacau, derretendo na boca e deixando um toque suave de doçura. Perfeito para acompanhar um café ou como uma sobremesa indulgente, é o tipo de doce que satisfaz qualquer desejo por chocolate.</p>
+                        <img src="imagens/brownie.jpg">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $12,00</p>
+                    <span class="material-symbols-outlined">add</span>
+                    </div>
                 </div>
-                <div class="food-img-2">
-                    <p>Imagine uma rosquinha macia e irresistivelmente fofa, envolta em uma camada brilhante de chocolate. A cobertura é densa, com aquele sabor rico e indulgente que se desmancha suavemente na boca, complementando a textura leve e aerada da rosquinha. Cada mordida é uma combinação perfeita de doçura e maciez, um convite ao prazer simples que só uma rosquinha bem feita pode oferecer.</p>
-                    <img src="imagens/donauts.jpg">
+                <div class="container">
+                    <div class="title-food">
+                        <h3>Donauts</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p>Imagine uma rosquinha macia e irresistivelmente fofa, envolta em uma camada brilhante de chocolate. A cobertura é densa, com aquele sabor rico e indulgente que se desmancha suavemente na boca, complementando a textura leve e aerada da rosquinha. Cada mordida é uma combinação perfeita de doçura e maciez, um convite ao prazer simples que só uma rosquinha bem feita pode oferecer.</p>
+                        <img src="imagens/donauts.jpg">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $8,00</p>
+                    <span class="material-symbols-outlined">add</span>
+                    </div>
                 </div>
-                <div class="valor-food">
-                    <p>Valor:  $8,00</p>
-                <span class="material-symbols-outlined">add</span>
+                <div class="container">
+                    <div class="title-food">
+                        <h3>MilkShake Choco</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p>Imagine um milkshake cremoso de chocolate, coberto com uma generosa dose de calda de chocolate que escorre pelas laterais do copo. Misturado ao shake, pedaços crocantes de Oreo se destacam, trazendo uma textura irresistível e um toque de biscoito que complementa perfeitamente o sabor rico e doce do chocolate. Cada gole é uma explosão de sabores, onde o chocolate e o Oreo se encontram em uma combinação indulgente que faz qualquer momento ser mais doce.<p>
+                        <img src="imagens/milkshake.jpg">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $14,00</p>
+                    <span class="material-symbols-outlined">add</span>
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="title-food">
-                    <h3>MilkShake Choco</h3>
-                </div>
-                <div class="food-img-2">
-                    <p>Imagine um milkshake cremoso de chocolate, coberto com uma generosa dose de calda de chocolate que escorre pelas laterais do copo. Misturado ao shake, pedaços crocantes de Oreo se destacam, trazendo uma textura irresistível e um toque de biscoito que complementa perfeitamente o sabor rico e doce do chocolate. Cada gole é uma explosão de sabores, onde o chocolate e o Oreo se encontram em uma combinação indulgente que faz qualquer momento ser mais doce.<p>
-                    <img src="imagens/milkshake.jpg">
-                </div>
-                <div class="valor-food">
-                    <p>Valor:  $14,00</p>
-                <span class="material-symbols-outlined">add</span>
-                </div>
-            </div>
-            <div class="container">
-                <div class="title-food">
-                    <h3>Canudo doce de leite</h3>
-                </div>
-                <div class="food-img-2">
-                    <p>Cinco canudos crocantes, bem recheados com doce de leite cremoso, esperam para ser saboreados. A casquinha dourada e crocante contrasta com o recheio generoso, que traz o sabor rico e envolvente do doce de leite em cada mordida. Esses canudos são perfeitos para quem busca um doce simples, mas cheio de sabor, oferecendo uma combinação irresistível de textura e doçura.<p>
-                    <img src="imagens/canudo-nutela.jpg">
-                </div>
-                <div class="valor-food">
-                    <p>Valor:  $10,00</p>
-                <span class="material-symbols-outlined">add</span>
+                <div class="container">
+                    <div class="title-food">
+                        <h3>Canudo doce de leite</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p>Cinco canudos crocantes, bem recheados com doce de leite cremoso, esperam para ser saboreados. A casquinha dourada e crocante contrasta com o recheio generoso, que traz o sabor rico e envolvente do doce de leite em cada mordida. Esses canudos são perfeitos para quem busca um doce simples, mas cheio de sabor, oferecendo uma combinação irresistível de textura e doçura.<p>
+                        <img src="imagens/canudo-nutela.jpg">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $10,00</p>
+                    <span class="material-symbols-outlined">add</span>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <script src="menu.js"></script>
     <script src="login.js"></script>
-    <script src="entrega.js"></script>
+    <script src="pedidos.js"></script>
+    <script src="pesquisa.js"></script>
 </body>
 </html>
