@@ -755,18 +755,17 @@ span.sair-2 {
 }
 
 span.compartilhar {
-
     top:2%;
     left:90%;
 }
 
 span.tela-cheia {
-
     left:90%;
     top:40%;
 }
 
 div.food {
+    height:100%;
     background-color:lightgray;
 }
 
