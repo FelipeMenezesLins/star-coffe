@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Coffe</title>
+    <title>Star-Coffe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/logo-original-cafe.avif" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -13,7 +14,7 @@
     <header>
         <div id="navegação">
             <nav>
-                <div id="procurar">
+                <div class="procurar">
                     <span class="material-symbols-outlined">&#xE8B6;</span>
                 </div>
                 <div class="cadastro">
@@ -206,6 +207,21 @@
                 arrow_forward_ios
             </span>
         </div>
+        <nav id="nav-1" class="hidden">
+            <ul class="lista">
+                <li><a href="#inverno">Lançamentos de inverno</a></li>
+                <li><a href="#">Bebidas geladas</a></li>
+                <li><a href="#">Hasbaccino</a></li>
+                <li><a href="#">Bebidas Quentes </a></li>
+                <li><a href="#">Sanduíches</a></li>
+                <li><a href="#">Salgados</a></li>
+                <li> 
+                <div class="procurar">
+                    <span class="material-symbols-outlined">&#xE8B6;</span>
+                </div>
+            </li>
+            </ul>
+        </nav>
         <div class="lupa">
             <div class="position">
                 <span class="material-symbols-outlined" id="fecha">
@@ -250,7 +266,7 @@
                                 </span>
                                 <div>
                                     <h3>Endereço</h3>
-                                    <p>Rua Gorgino Carioba Americana</p>
+                                    <p>Rua Gorgino Luchiari São Manoel Americana SP</p>
                                 </div>
                             </div>
                             <span class="material-symbols-outlined">
@@ -277,15 +293,14 @@
                 </div>
             </div>
         </div>      
-        <div id="inverno">
-            <div class="categorias">
+            <div id="inverno" class="categorias">
                 <h2>Lançamentos do inverno</h2>
                 <div class="container">
                     <div class="title-food">
                         <h3>Brownie</h3>
                     </div>
                     <div class="food-img-2">
-                        <p class="descricao">Um brownie de chocolate denso e úmido, com uma crosta levemente crocante por fora e um interior rico e macio. Cada pedaço traz um sabor intenso de cacau, derretendo na boca e deixando um toque suave de doçura. Perfeito para acompanhar um café ou como uma sobremesa indulgente, é o tipo de doce que satisfaz qualquer desejo por chocolate.</p>
+                        <p class="descricao">Brownie de chocolate denso e úmido com crosta crocante e interior macio, sabor intenso de cacau.</p>
                         <img src="imagens/brownie.jpg">
                     </div>
                     <div class="valor-food">
@@ -298,7 +313,7 @@
                         <h3>Donauts</h3>
                     </div>
                     <div class="food-img-2">
-                        <p class="descricao">Imagine uma rosquinha macia e irresistivelmente fofa, envolta em uma camada brilhante de chocolate. A cobertura é densa, com aquele sabor rico e indulgente que se desmancha suavemente na boca, complementando a textura leve e aerada da rosquinha. Cada mordida é uma combinação perfeita de doçura e maciez, um convite ao prazer simples que só uma rosquinha bem feita pode oferecer.</p>
+                        <p class="descricao">Rosquinha macia com cobertura de chocolate denso e brilhante.</p>
                         <img src="imagens/donauts.jpg">
                     </div>
                     <div class="valor-food">
@@ -311,7 +326,7 @@
                         <h3>MilkShake Choco</h3>
                     </div>
                     <div class="food-img-2">
-                        <p class="descricao">Imagine um milkshake cremoso de chocolate, coberto com uma generosa dose de calda de chocolate que escorre pelas laterais do copo. Misturado ao shake, pedaços crocantes de Oreo se destacam, trazendo uma textura irresistível e um toque de biscoito que complementa perfeitamente o sabor rico e doce do chocolate. Cada gole é uma explosão de sabores, onde o chocolate e o Oreo se encontram em uma combinação indulgente que faz qualquer momento ser mais doce.<p>
+                        <p class="descricao">Milkshake de chocolate com calda de chocolate e pedaços crocantes de Oreo.</p>
                         <img src="imagens/milkshake.jpg">
                     </div>
                     <div class="valor-food">
@@ -324,7 +339,7 @@
                         <h3>Canudo doce de leite</h3>
                     </div>
                     <div class="food-img-2">
-                        <p class="descricao">Cinco canudos crocantes, bem recheados com doce de leite cremoso, esperam para ser saboreados. A casquinha dourada e crocante contrasta com o recheio generoso, que traz o sabor rico e envolvente do doce de leite em cada mordida. Esses canudos são perfeitos para quem busca um doce simples, mas cheio de sabor, oferecendo uma combinação irresistível de textura e doçura.<p>
+                        <p class="descricao">Canudos crocantes recheados com doce de leite cremoso.</p>
                         <img src="imagens/canudo-nutela.jpg">
                     </div>
                     <div class="valor-food">
@@ -333,7 +348,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <!--CONTEUDO DO PEDIDO QUANDO FOR PEDIR-->
+           <section id="pedido-1">
+                <div class="conteudo"></div>
+                <div class="conteudo"></div>
+                <div class="conteudo"></div>
+                <div class="conteudo"></div>
+           </section> 
     </main>
     <footer>
         <div class="footer-1">
@@ -349,6 +370,6 @@
     <script src="menu.js"></script>
     <script src="login.js"></script>
     <script src="pedidos.js"></script>
-    <script src="pesquisa.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>

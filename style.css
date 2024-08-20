@@ -90,7 +90,7 @@ nav div {
     margin-right:8px;
 }
 /*Icons configurações*/
-nav div#procurar span{
+nav div.procurar span{
     margin:0px 5px;
     cursor:pointer;
     font-size:36px;
@@ -144,6 +144,7 @@ nav div#m-1 span {
     background-color: rgba(0, 0, 0, 0.713);
     position: fixed;
     display:none;
+    z-index: 100;
 }
 
 /* Estilo inicial da classe lupa */
@@ -344,6 +345,7 @@ div#login {
     background-color: rgba(0, 0, 0, 0.713);
     position: fixed;
     display: none;
+    z-index: 100;
 }
 
 div.entre {
@@ -586,6 +588,50 @@ div.retirar {
 div.retirar span {
     margin:5px;
 }
+/*NAV*/
+
+nav#nav-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:lightgray;
+    color: white;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 10;
+    overflow-x: scroll;
+}
+
+
+#nav-1.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+nav#nav-1 ul.lista {
+    width:100%;
+    list-style-type: none;
+    display:flex;
+}
+
+ul.lista li {
+    margin:10px 0px;
+    border-left:1px solid gray;
+    padding:0px 20px;
+    text-align: center;
+    width:100%;
+    font-size:.8em;
+    display:flex;
+}
+
+ul.lista a {
+    color:gray;
+    text-decoration: none;
+    width:100%;
+}
+
 
 div#inverno {
     width:100%;
@@ -600,7 +646,7 @@ div.categorias {
 }
 
 div.categorias h2 {
-    color:rgb(214, 213, 213);
+    color:white;
     margin-bottom:10px;
     text-align: center;
 }
@@ -635,19 +681,20 @@ div.food-img {
 div.food-img-2 {
     width:100%;
     display:flex;
-    justify-content:right;
+    justify-content:space-between;
+    align-items: center;
     margin:10px 0px
 }
 
 div.food-img-2 img{
-    width:200px;
+    width:150px;
     border-radius:5px;
     box-shadow:1px 1px 4px rgba(0, 0, 0, 0.171);
  }
 
  div.food-img-2  p.descricao {
-    display:none;
-    font-size:.8em;
+    width:50%;
+    font-size:1em;
     margin:5px;
  }
 

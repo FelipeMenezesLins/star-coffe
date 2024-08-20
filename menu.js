@@ -1,15 +1,18 @@
 let seta = document.querySelectorAll('.voltar');
 let selecionar = document.querySelectorAll('.lupa');
 let span = document.getElementById('m-1');
-let procurar = document.getElementById('procurar');
+let procurar = document.querySelectorAll('.procurar');
 let carrinho = document.getElementById('carrinho')
 let a = document.querySelectorAll('.ancora')
 
 
+procurar.forEach((procurar)=> {
+    procurar.addEventListener('click', () => {
+        selecionar[1].style.display = 'block'
+    });
+}) 
+  
 
-procurar.addEventListener('click', () => {
-    selecionar[1].style.display = 'block'
-});
 
 span.addEventListener('click', () => {
     selecionar[0].style.display = 'block'
