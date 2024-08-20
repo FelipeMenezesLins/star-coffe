@@ -737,6 +737,7 @@ section#pedido-1 div.c-1 {
 }
 
 div.conteudo {
+    height:100%;
     display:none;
 }
 
@@ -793,7 +794,7 @@ div.pagamento {
 div.pagamento ul li {
     border-bottom:1px solid gray;
     display:flex;
-    padding:15px;
+    padding:10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -816,6 +817,7 @@ div.add div.quantidade {
 }
 
 div.fixed {
+    background-color:lightgrey;
     display:flex;
     justify-content: space-between;
     padding:10px;
