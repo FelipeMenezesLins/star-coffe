@@ -66,7 +66,7 @@ div#logo p {
 }
 
 div.botoes input {
-    padding:5px;
+    padding:10px;
     margin-top:5px;
     border-radius:20px;
     border:0px;
@@ -365,6 +365,18 @@ div.entre span#fechar {
     cursor:pointer;
 }
 
+
+ img.logo{
+    width:100px;
+    border-radius:10px;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.28);
+    position:absolute;
+    display:inline;
+    top:20%;
+    left:50%;
+    transform:translate(-50%, -50%)
+}
+
 div#from {
     display:flex;
     flex-wrap:wrap;
@@ -372,7 +384,7 @@ div#from {
     position: absolute;
     top:50%;
     left:50%;
-    width:350px;
+    width:340px;
     padding:10px;
     background-color:white;
     border-radius:5px;
@@ -446,7 +458,7 @@ div.position {
 
 div.position > span {
     position: absolute;
-    top:20%;
+    top:18%;
     left:90%;
     color:white;
     font-size:30px;
@@ -457,7 +469,7 @@ div#aparecer {
     position: absolute;
     top:50%;
     left:50%;
-    width:450px;
+    width:350px;
     background-color:white;
     border-radius:10px;
     padding:10px;
@@ -482,6 +494,10 @@ div.subs {
     margin:10px 0px;
     border-radius:5px;
     display:none;
+}
+
+div.subs p {
+    font-size:.9em;
 }
 
 div.subs input {
@@ -534,11 +550,11 @@ div.timer div h3 {
 
 /*Conteúdo principal*/ 
 main {
-    max-width:600px;
+    max-width:500px;
+    padding:10px;
     border-radius:5px;
     margin:auto;
     background-color:rgb(232, 232, 232);
-    padding:10px;
 }
 
 div#retirou {
@@ -547,6 +563,7 @@ div#retirou {
     align-items:center;
     background-color:var(--cor1);
     border-radius:20px;
+    margin:5px 0px;
     cursor:pointer;
 }
 
@@ -555,6 +572,7 @@ div#entregar {
     align-items:center;
     background-color:var(--cor1);
     border-radius:20px;
+    margin:5px 0px;
     cursor:pointer;
     display: none;
 }
@@ -569,17 +587,22 @@ div.retirar span {
     margin:5px;
 }
 
+div#inverno {
+    width:100%;
+}
+
 div.categorias {
     width:100%;
     margin:20px auto;
     background-color:var(--cor2);
-    padding:10px;
+    padding:10px 0px;
     border-radius:5px;
 }
 
 div.categorias h2 {
     color:rgb(214, 213, 213);
     margin-bottom:10px;
+    text-align: center;
 }
 
 div.container {
@@ -587,8 +610,8 @@ div.container {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin:10px;
     padding:10px;
-    margin:10px 0px;
     border-radius:5px;
 }
 
@@ -612,23 +635,19 @@ div.food-img {
 div.food-img-2 {
     width:100%;
     display:flex;
-    justify-content:space-between;
-}
-
-div.food-img img{
-   width:150px;
-   border-radius:5px;
-   box-shadow:1px 1px 4px rgba(0, 0, 0, 0.171);
+    justify-content:right;
+    margin:10px 0px
 }
 
 div.food-img-2 img{
-    width:130px;
+    width:200px;
     border-radius:5px;
     box-shadow:1px 1px 4px rgba(0, 0, 0, 0.171);
  }
 
- div.food-img-2 p {
-    font-size:.7em;
+ div.food-img-2  p.descricao {
+    display:none;
+    font-size:.8em;
     margin:5px;
  }
 
@@ -651,3 +670,100 @@ div.valor-food span {
     cursor:pointer;
 }
 
+/*Footer*/
+
+footer {
+    background-color:lightgray;
+    padding:10px;
+}
+
+footer a {
+    text-decoration: none;
+    color:gray;
+}
+
+div.footer-1 p{
+   text-align: center;
+   color:gray;
+}
+
+
+div.footer-1 img{
+    width:100px;
+    border-radius:10px;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.365);
+    display:block;
+    margin:5px auto;
+}
+
+div.termos p{
+    text-align: center;
+    color:gray;
+    margin-top:10px;
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    header {
+        height:100%;
+    }
+
+    header h1 {
+        font-size:3.5em;
+    }
+    /*NAV*/
+    nav {
+        padding:10px;
+    }
+    /*NAV ICONS*/
+    nav div.cadastro {
+        display:flex;
+        font-size:1.2em;
+    }
+
+    nav div.cadastro span{
+        display:flex;
+        font-size:30px;
+    }
+
+    nav div#carrinho {
+        display:block;
+    }
+
+    nav div#carrinho span {
+        font-size:36px;
+    }
+
+    nav div#cupons {
+        display: block;
+    }
+
+    div#logo {
+        width:80%;
+    }
+
+    div#logo img {
+        width:130px;
+    }
+
+    div#logo p {
+        font-size:1.2em;
+    }
+
+    div#logo input {
+        padding:15px;
+        font-size:1.1em;
+    }
+
+    /*Pesquisa*/
+    div.selecionar input#pesquisa {
+        padding:15px;
+        width:700px;
+    }
+
+    div.selecionar ul {
+        max-width:700px;
+        margin: 10px auto;
+        border-radius:10px;
+        box-shadow:1px 1px 3px rgba(0, 0, 0, 0.19);
+    }
+}

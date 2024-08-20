@@ -3,6 +3,8 @@ let selecionar = document.querySelectorAll('.lupa');
 let span = document.getElementById('m-1');
 let procurar = document.getElementById('procurar');
 let carrinho = document.getElementById('carrinho')
+let a = document.querySelectorAll('.ancora')
+
 
 
 procurar.addEventListener('click', () => {
@@ -24,3 +26,9 @@ seta.forEach((seta) => {
        })
     });
 });
+
+a.forEach((a)=> {
+    a.addEventListener('click', ()=> {
+        selecionar[1].style.display = 'none'
+    })
+})
