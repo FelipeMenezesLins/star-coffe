@@ -614,11 +614,11 @@ nav#nav-1 ul.lista {
     width:100%;
     list-style-type: none;
     display:flex;
+    align-items: center;
 }
 
 ul.lista li {
     margin:10px 0px;
-    border-left:1px solid gray;
     padding:0px 20px;
     text-align: center;
     width:100%;
@@ -714,6 +714,122 @@ div.valor-food span {
     background-color:rgb(86, 252, 86);
     border-radius:50%;
     border:0px;
+    cursor:pointer;
+}
+
+section#pedido-1 {
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.713);
+    position: fixed;
+    display:none;
+    z-index: 100;
+    overflow-y: scroll;
+}
+
+section#pedido-1 div.c-1 {
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+div.conteudo {
+    display:none;
+}
+
+div.food > span {
+    background-color:rgba(0, 0, 0, 0.553);
+    color:white;
+    position:absolute;
+    cursor:pointer;
+    padding:10px;
+    border-radius:50%;
+}
+
+span.sair-2 {
+    top:2%;
+    left:0%;
+}
+
+span.compartilhar {
+
+    top:2%;
+    left:90%;
+}
+
+span.tela-cheia {
+
+    left:90%;
+    top:40%;
+}
+
+div.food {
+    background-color:lightgray;
+}
+
+div.food img {
+    width:100%;
+    height:330px;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.181);;
+}
+
+div.descricao-1 {
+    padding:10px;
+    border-bottom:1px solid gray;
+}
+
+div.descricao-1 h3 {
+    font-family:var(--font1);
+    color:var(--cor2);
+    font-size:1.7em;
+}
+
+div.pagamento {
+    padding:0px;
+}
+
+div.pagamento ul li {
+    border-bottom:1px solid gray;
+    display:flex;
+    padding:15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.add {
+    display:flex;
+    padding:10px;
+    align-items: center;
+}
+
+div.add span {
+    color:white;
+    background-color:var(--cor2);
+    border-radius:50%;
+    cursor:pointer;
+}
+
+div.add div.quantidade {
+    margin:10px;
+}
+
+div.fixed {
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    width:100%;
+}
+
+div.fixed button#adicionar {
+    background-color:var(--cor2);
+    border:0px;
+    border-radius:20px;
+    color:white;
+    padding:10px;
+    width:80%;
+    font-size:1.2em;
     cursor:pointer;
 }
 
