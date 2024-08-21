@@ -799,7 +799,7 @@ div.pagamento {
 }
 
 div.pagamento ul li {
-    border-bottom:1px solid gray;
+    border-bottom:1px solid rgb(221, 221, 221);
     display:flex;
     padding:10px;
     align-items: center;
@@ -821,6 +821,11 @@ div.add span {
 
 div.add div.quantidade {
     margin:10px;
+}
+
+div.center {
+    display:flex;
+    align-items:center;
 }
 
 div.fixed {
@@ -1059,9 +1064,10 @@ div.termos p{
     }
 
     div.pagamento ul {
+        height:400px;
+        overflow-y: auto;
         background-color:white;
         margin:10px;
-        margin-bottom:110px;
         border-radius:5px;
         padding:10px;
     }

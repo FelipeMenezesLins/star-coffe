@@ -25,7 +25,7 @@ sair.forEach((sair)=> {
 let sair = document.querySelectorAll('.sair-2');
 let compartilhar = document.querySelectorAll('.compartilhar');
 let tela = document.querySelectorAll('.tela-cheia');
-let add = document.querySelectorAll('.add');
+let add = document.querySelectorAll('.colocar');
 let principal = document.getElementById('pedido-1');
 let conteudo = document.querySelectorAll('.conteudo');
 
