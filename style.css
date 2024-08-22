@@ -374,7 +374,7 @@ div.entre span#fechar {
     box-shadow:1px 1px 3px rgba(0, 0, 0, 0.28);
     position:absolute;
     display:inline;
-    top:20%;
+    top:16%;
     left:50%;
     transform:translate(-50%, -50%)
 }
@@ -392,6 +392,14 @@ div#from {
     border-radius:5px;
     box-shadow:1px 1px 4px rgba(0, 0, 0, 0.395);
     transform: translate(-50%, -50%);
+}
+
+div#from h2 {
+    font-family:var(--font1);
+    width:100%;
+    color:var(--cor2);
+    text-align: center;
+    font-size:1.5em;
 }
 
 div#from span {
@@ -602,6 +610,8 @@ nav#nav-1 {
     transition: transform 0.5s ease, opacity 0.5s ease;
     z-index: 10;
     overflow-x: scroll;
+    display:flex;
+    justify-content: space-between;
 }
 
 
@@ -722,7 +732,7 @@ section#pedido-1 {
     left:0;
     height:100%;
     width:100%;
-    background-color:lightgrey;;
+    background-color:lightgray;
     position: fixed;
     display:none;
     z-index: 100;
@@ -825,7 +835,7 @@ div.add div.quantidade {
 
 div.center {
     display:flex;
-    align-items:center;
+    align-items:end;
 }
 
 div.fixed {
@@ -892,6 +902,10 @@ div.termos p{
     /*NAV*/
     nav {
         padding:10px;
+    }
+    /*Nav menu secundario*/
+    nav#nav-1 ul.lista{
+        display:none;
     }
     /*NAV ICONS*/
     nav div.cadastro {
@@ -964,7 +978,7 @@ div.termos p{
     }
 
     div.entre img.logo {
-        top:18%;
+        top:14%;
     }
 
     div.entre span#fechar {
@@ -1021,6 +1035,10 @@ div.termos p{
 
     /*Pedidos ou Comida*/
 
+    section#pedido-1 {
+        background: rgba(0, 0, 0, 0.303);
+    }
+
     div.conteudo {
         position: relative;
         top:50%;
@@ -1071,7 +1089,399 @@ div.termos p{
         border-radius:5px;
         padding:10px;
     }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    header {
+        height:100%;
+    }
+
+    header h1 {
+        font-size:3.5em;
+    }
+    /*NAV*/
+    nav {
+        padding:10px;
+    }
+    /*NAV ICONS*/
+    nav div.cadastro {
+        display:flex;
+        font-size:1.2em;
+    }
+
+    nav div.cadastro span{
+        display:flex;
+        font-size:30px;
+    }
+
+    nav div#carrinho {
+        display:block;
+    }
+
+    nav div#carrinho span {
+        font-size:36px;
+    }
+
+    nav div#cupons {
+        display: block;
+    }
+
+    div#logo {
+        width:70%;
+    }
+
+    div#logo img {
+        width:130px;
+    }
+
+    div#logo p {
+        font-size:1.2em;
+    }
+
+    div#logo input {
+        padding:15px;
+        font-size:1.1em;
+    }
+
+    /*Pesquisa*/
+    div.selecionar input#pesquisa {
+        padding:15px;
+        width:700px;
+    }
+
+    div.selecionar ul {
+        max-width:700px;
+        margin: 10px auto;
+        border-radius:10px;
+        box-shadow:1px 1px 3px rgba(0, 0, 0, 0.19);
+    }
+
+    /*Compras*/
+    i.material-icons{
+     font-size:28px;
+    }
+
+    div.compras {
+        margin:0px;
+        position: absolute;
+        left:0%;
+        top:0%;
+    }
+    /*Cadastro*/
+    div.entre {
+        background-color:rgba(0, 0, 0, 0.208);
+        background-image: none;
+    }
+
+    div.entre img.logo {
+        top:14%;
+    }
+
+    div.entre span#fechar {
+        left:95%;
+    }
+
+    /*Main*/
+    main { 
+        max-width:100%;
+    }
+
+    main div#retirou {
+        max-width:800px;
+        margin: auto;
+    }
+
+    main div#entregar {
+        max-width:800px;
+        margin:auto;
+    }
+
+    div.position span#fecha {
+        top:0%;
+        left:95%;
+        font-size:36px;
+    }
+
+    div.categorias {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width:900px;
+        margin:10px auto;
+        padding:10px;
+    }
+
+    div.categorias h2 {
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    div.container {
+        width:47%;
+        margin:5px;
+    }
+
+    div.title-food h3 {
+        font-size:1.7em;
+    }
+
+    div.food-img-2 img {
+        width:180px;
+    }
+
+    /*Pedidos ou Comida*/
+
+    section#pedido-1 {
+        background: rgba(0, 0, 0, 0.303);
+    }
+    
+
+    div.conteudo {
+        position: relative;
+        top:50%;
+        left:50%;
+        display:flex;
+        height:auto;
+        max-width:720px;
+        transform:translate(-50%, -50%);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.298);
+    }
+
+    div.descricao-1 {
+        border:0px;
+    }
+
+    div.food {
+        background-color:white;
+        height:auto;
+        display:flex;
+        justify-content: space-between;
+        border-radius:5px;
+    }
+
+    div.sub-food {
+        width:50%;
+  
+    }
+
+    div.pagamento {
+        width:50%;
+        overflow-y:auto;
+        background-color:lightgrey;
+    }
+
+    div.fixed {
+        background-color:white;
+    }
+
+    span.tela-cheia {
+        display:none;
+    }
+
+    div.pagamento ul {
+        height:400px;
+        overflow-y: auto;
+        background-color:white;
+        margin:10px;
+        border-radius:5px;
+        padding:10px;
+    }
+}
 
 
+@media screen and (min-width:1200px) {
+    header {
+        height:100%;
+    }
 
+    header h1 {
+        font-size:3.5em;
+    }
+    /*NAV*/
+    nav {
+        padding:10px;
+    }
+    /*NAV ICONS*/
+    nav div.cadastro {
+        display:flex;
+        font-size:1.2em;
+    }
+
+    nav div.cadastro span{
+        display:flex;
+        font-size:30px;
+    }
+
+    nav div#carrinho {
+        display:block;
+    }
+
+    nav div#carrinho span {
+        font-size:36px;
+    }
+
+    nav div#cupons {
+        display: block;
+    }
+
+    div#logo {
+        width:70%;
+    }
+
+    div#logo img {
+        width:130px;
+    }
+
+    div#logo p {
+        font-size:1.2em;
+    }
+
+    div#logo input {
+        padding:15px;
+        font-size:1.1em;
+    }
+
+    /*Pesquisa*/
+    div.selecionar input#pesquisa {
+        padding:15px;
+        width:700px;
+    }
+
+    div.selecionar ul {
+        max-width:700px;
+        margin: 10px auto;
+        border-radius:10px;
+        box-shadow:1px 1px 3px rgba(0, 0, 0, 0.19);
+    }
+
+    /*Compras*/
+    i.material-icons{
+     font-size:28px;
+    }
+
+    div.compras {
+        margin:0px;
+        position: absolute;
+        left:0%;
+        top:0%;
+    }
+    /*Cadastro*/
+    div.entre {
+        background-color:rgba(0, 0, 0, 0.208);
+        background-image: none;
+    }
+
+    div.entre img.logo {
+        top:14%;
+    }
+
+    div.entre span#fechar {
+        left:95%;
+    }
+
+    /*Main*/
+    main { 
+        max-width:100%;
+    }
+
+    main div#retirou {
+        max-width:800px;
+        margin: auto;
+    }
+
+    main div#entregar {
+        max-width:800px;
+        margin:auto;
+    }
+
+    div.position span#fecha {
+        top:0%;
+        left:95%;
+        font-size:36px;
+    }
+
+    div.categorias {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width:900px;
+        margin:10px auto;
+        padding:10px;
+    }
+
+    div.categorias h2 {
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    div.container {
+        width:47%;
+        margin:5px;
+    }
+
+    div.title-food h3 {
+        font-size:1.7em;
+    }
+
+    div.food-img-2 img {
+        width:180px;
+    }
+
+    /*Pedidos ou Comida*/
+
+    section#pedido-1 {
+        background: rgba(0, 0, 0, 0.303);
+    }
+    
+
+    div.conteudo {
+        position: relative;
+        top:50%;
+        left:50%;
+        display:flex;
+        height:auto;
+        max-width:720px;
+        transform:translate(-50%, -50%);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.298);
+    }
+
+    div.descricao-1 {
+        border:0px;
+    }
+
+    div.food {
+        background-color:white;
+        height:auto;
+        display:flex;
+        justify-content: space-between;
+        border-radius:5px;
+    }
+
+    div.sub-food {
+        width:50%;
+  
+    }
+
+    div.pagamento {
+        width:50%;
+        overflow-y:auto;
+        background-color:lightgrey;
+    }
+
+    div.fixed {
+        background-color:white;
+    }
+
+    span.tela-cheia {
+        display:none;
+    }
+
+    div.pagamento ul {
+        height:400px;
+        overflow-y: auto;
+        background-color:white;
+        margin:10px;
+        border-radius:5px;
+        padding:10px;
+    }
 }
