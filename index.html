@@ -85,7 +85,7 @@
             <span class="material-symbols-outlined voltar">
                 keyboard_backspace
             </span>
-            <input type="text" name="pes" id="pesquisa" placeholder="Pesquisa">
+            <input type="text" name="pes" class="pesquisa" placeholder="Pesquisa">
             <ul>
                 <li>
                     <a href="#inverno" class="ancora">Lançamentos do inverno 
@@ -95,14 +95,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="ancora">Bebidas Geladas 
+                    <a href="#bebida-g" class="ancora">Bebidas Geladas 
                     <span class="material-symbols-outlined">
                          arrow_forward
                     </span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="ancora"> Hasbaccino
+                    <a href="#frappuccino" class="ancora"> Frappuccino
                     <span class="material-symbols-outlined">
                          arrow_forward
                     </span>
@@ -187,28 +187,36 @@
             </div>
         </div>
     </div>
-    <main>
-        <div id="retirou">
-            <div class="retirar">
+
+
+  <!--CONTEUDO PRINCIPAL-->
+
+
+    <main id="principal">
+        <div class="pes-ite">
+            <div id="retirou">
+                <div class="retirar">
+                    <span class="material-symbols-outlined">
+                        directions_run
+                        </span>
+                    <p>Retirada em 25 min</p>
+                </div>
                 <span class="material-symbols-outlined">
-                    directions_run
-                    </span>
-                <p>Retirada em 25 min</p>
-            </div>
-            <span class="material-symbols-outlined">
-                arrow_forward_ios
-            </span>
-        </div>
-        <div id="entregar">
-            <div class="retirar">
-                <span class="material-symbols-outlined">
-                    motorcycle
+                    arrow_forward_ios
                 </span>
-                <p>Entrega em 25 min</p>
             </div>
-            <span class="material-symbols-outlined">
-                arrow_forward_ios
-            </span>
+            <div id="entregar">
+                <div class="retirar">
+                    <span class="material-symbols-outlined">
+                        motorcycle
+                    </span>
+                    <p>Entrega em 25 min</p>
+                </div>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </div>
+            <input type="text" name="pes" class="pesquisa" placeholder="Pesquisa">
         </div>
         <nav id="nav-1" class="hidden">
             <div id="escolha-de-categorias">
@@ -223,17 +231,22 @@
                     </h3>
                 </div>
             </div>
+            <div id="pesquisa">
+                <div>
+                    <span class="material-symbols-outlined">&#xE8B6;</span>
+                </div>
+                <div>
+                    <input type="text" name="pes" class="pesquisa" placeholder="Pesquisa">
+                </div>
+            </div>
             <ul class="lista">
                 <li><a href="#inverno">Lançamentos de Inverno</a></li>
                 <li><a href="#bebidas-g">Bebidas Geladas</a></li>
-                <li><a href="#">Hasbaccino</a></li>
+                <li><a href="#frappuccino">Frappuccino</a></li>
                 <li><a href="#">Bebidas Quentes </a></li>
                 <li><a href="#">Sanduíches</a></li>
                 <li><a href="#">Salgados</a></li>
                 <li>
-                <div class="procurar">
-                    <span class="material-symbols-outlined">&#xE8B6;</span>
-                </div>
             </li>
             </ul>
             <div id="icons">
@@ -268,7 +281,7 @@
                     arrow_forward_ios
                 </span>
             </li>
-            <li class="op"><a href="#">Lançamentos de inverno</a>
+            <li class="op"><a href="#frappuccino">Frappuccino</a>
                 <span class="material-symbols-outlined">
                     arrow_forward_ios
                 </span>
@@ -375,7 +388,7 @@
 
         <!--LANÇAMENTOS-->
 
-            <div id="inverno" class="categorias">
+            <div id="inverno" class="categorias ancora">
                 <h2>Lançamentos do Inverno</h2>
                 <div class="container">
                     <div class="title-food">
@@ -444,15 +457,15 @@
                 </div>
             </div>
 
-            <div id="bebidas-g" class="categorias">
+            <div id="bebidas-g" class="categorias ancora">
                 <h2>Bebidas Geladas</h2>
                 <div class="container">
                     <div class="title-food">
-                        <h3>Brownie</h3>
+                        <h3>Café Latte Gelado</h3>
                     </div>
                     <div class="food-img-2">
-                        <p class="descricao">Brownie de chocolate denso e úmido com crosta crocante e interior macio, sabor intenso de cacau.</p>
-                        <img src="imagens/brownie.jpg">
+                        <p class="descricao">Café expresso,Leite gelado,Gelo,Adoçante ou açúcar (opcional)</p>
+                        <img src="imagens/café-latte-gelado.webp">
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $12,00</p>
@@ -461,11 +474,11 @@
                 </div>
                 <div class="container">
                     <div class="title-food">
-                        <h3>Donauts</h3>
+                        <h3>Cappuccino Gelado</h3>
                     </div>
                     <div class="food-img-2">
-                        <p class="descricao">Rosquinha macia com cobertura de chocolate denso e brilhante.</p>
-                        <img src="imagens/donauts.jpg">
+                        <p class="descricao">Café expresso,Leite gelado,Gelo,Chantilly (opcional),Chocolate em pó ou canela para polvilhar (opcional)</p>
+                        <img src="imagens/cappuccino-gelado.webp">
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $8,00</p>
@@ -474,11 +487,11 @@
                 </div>
                 <div class="container">
                     <div class="title-food">
-                        <h3>Sorvete Choco</h3>
+                        <h3>Cold Brew Balnilha</h3>
                     </div>
                     <div class="food-img-2">
-                        <p class="descricao">Sorvete de chocolate com calda de chocolate e pedaços crocantes de Oreo.</p>
-                        <img src="imagens/sorverte.jpg">
+                        <p class="descricao">Café cold brew (café coado a frio),Leite ou creme de baunilha,Xarope de baunilha,Gelo</p>
+                        <img src="imagens/cold-brew-banilha.png">
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $14,00</p>
@@ -487,11 +500,11 @@
                 </div>
                 <div class="container">
                     <div class="title-food">
-                        <h3>Canudo doce de leite</h3>
+                        <h3>Iced Chai Latte</h3>
                     </div>
                     <div class="food-img-2">
-                        <p class="descricao">Canudos crocantes recheados com doce de leite cremoso.</p>
-                        <img src="imagens/canudo-nutela.jpg">
+                        <p class="descricao">Chá preto,Especiarias (canela, cardamomo, cravo, gengibre),Leite gelado,Gelo,Adoçante ou mel</p>
+                        <img src="imagens/Iced Chai Latte.webp">
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $10,00</p>
@@ -500,11 +513,24 @@
                 </div>
                 <div class="container">
                     <div class="title-food">
-                        <h3>Hot dog clasico</h3>
+                        <h3>Iced Vanilla Latte</h3>
                     </div>
                     <div class="food-img-2">
-                        <p class="descricao">Cachorro-quente clássico: pão macio, salsicha suculenta, purê de batata, batata-palha, ketchup e maionese.</p>
-                        <img src="imagens/hot-dog.jpg">
+                        <p class="descricao">Café expresso,Leite gelado,Xarope de baunilha,Gelo</p>
+                        <img src="imagens/iced-vanilla-latte.webp">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $9,00</p>
+                    <span class="material-symbols-outlined colocar">add</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title-food">
+                        <h3>Limonada Caseira</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p class="descricao">Suco de limão fresco,Água,Açúcar ou adoçante a gosto,Gelo,Rodelas de limão para decorar (opcional)</p>
+                        <img src="imagens/limonada.JPG">
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $9,00</p>
@@ -512,7 +538,101 @@
                     </div>
                 </div>
             </div>
+            </div>
 
+            <div id="frappuccino" class="categorias ancora">
+                <h2>Frappuccino</h2>
+                <div class="container">
+                    <div class="title-food">
+                        <h3>Frappuccino Caramelo</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p class="descricao"></p>
+                        <img src="imagens/frapuchino-caramelo.jpg">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $12,00</p>
+                    <span class="material-symbols-outlined colocar">add</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title-food">
+                        <h3>Frappuccino Doce Leite</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p class="descricao"></p>
+                        <img src="imagens/frapuchino-docedeleite.jpg">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $8,00</p>
+                    <span class="material-symbols-outlined colocar">add</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title-food">
+                        <h3>Frappuccino Morango</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p class="descricao"></p>
+                        <img src="imagens/frapuchino-morango.jpg">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $10,00</p>
+                    <span class="material-symbols-outlined colocar">add</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title-food">
+                        <h3>Frappuccino Nutella</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p class="descricao"></p>
+                        <img src="imagens/frapuchino-nutella.jpg">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $9,00</p>
+                    <span class="material-symbols-outlined colocar">add</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title-food">
+                        <h3>Frappuccino Oreo</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p class="descricao"></p>
+                        <img src="imagens/frapuchino-oreo.jpg">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $9,00</p>
+                    <span class="material-symbols-outlined colocar">add</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="title-food">
+                        <h3>Frappuccino Chocolate</h3>
+                    </div>
+                    <div class="food-img-2">
+                        <p class="descricao"></p>
+                        <img src="imagens/frapuchino.jpg">
+                    </div>
+                    <div class="valor-food">
+                        <p>Valor:  $9,00</p>
+                    <span class="material-symbols-outlined colocar">add</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!--Caso n encontre o resultado pesquisado-->
+
+            <div id="naoacho">
+                <div id="naoencontrou">
+                    <span class="material-symbols-outlined">
+                        search_off
+                    </span>
+                    <h3>Nenhum resultado encontrado</h3>
+                </div>
+            </div>
 
             <!--CONTEUDO DO PEDIDO QUANDO FOR PEDIR-->
 

@@ -4,7 +4,7 @@ let ul = document.getElementById('opcao')
 
 window.addEventListener('scroll', function() {
     const nav = document.getElementById('nav-1');
-    const content = document.getElementById('inverno');
+    const content = document.getElementById('principal');
     const showNavAt = content.offsetTop;
   
     if (window.scrollY >= showNavAt) {

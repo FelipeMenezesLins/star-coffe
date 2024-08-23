@@ -22,6 +22,7 @@
     --fontpadrao: 'arial,helvetica,sans-serif'
 }
 /*header configurações*/
+
 header {
     background-color:black;
     background-image: url(imagens/cafe-fundo-1.jpg);
@@ -236,7 +237,7 @@ div.selecionar span.voltar {
     margin:5px;
 }
 
-div.selecionar input#pesquisa {
+div.selecionar input.pesquisa {
     display:block;
     margin:auto;
     padding:10px;
@@ -562,9 +563,41 @@ div.timer div h3 {
 main {
     max-width:500px;
     padding:10px;
-    border-radius:5px;
     margin:auto;
-    background-color:rgb(232, 232, 232);
+    background-color:rgb(234, 232, 232);
+}
+
+div#naoacho {
+    width:100%;
+    padding:10px;
+    display:none;
+}
+
+
+div#naoacho span {
+    font-size:400px;
+    color:gray;
+}
+
+div#naoencontrou {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div#naoencontrou h3 {
+    width:100%;
+    text-align: center;
+    color:gray;
+}
+
+
+div.pes-ite input.pesquisa{
+  padding:5px;
+  border-radius:20px;
+  border:0px;
+  box-shadow:1px 1px 3px rgba(0, 0, 0, 0.369);
+  display:none;
 }
 
 div#retirou {
@@ -596,6 +629,8 @@ div.retirar {
 div.retirar span {
     margin:5px;
 }
+
+
 /*NAV*/
 
 nav#nav-1 {
@@ -686,6 +721,13 @@ div#icons {
     display:none;
 }
 
+div#pesquisa {
+    padding:10px;
+    border-radius:20px;
+    border:0px;
+    display:none;
+}
+
 ul.lista li {
     margin:10px 0px;
     padding:0px 20px;
@@ -757,14 +799,15 @@ div.food-img-2 {
 }
 
 div.food-img-2 img{
-    width:150px;
+    width:40%;
     border-radius:5px;
     box-shadow:1px 1px 4px rgba(0, 0, 0, 0.171);
+    margin:0px 5px;
  }
 
  div.food-img-2  p.descricao {
-    width:50%;
-    font-size:1em;
+    width:40%;
+    font-size:.9em;
     margin:5px;
  }
 
@@ -896,7 +939,6 @@ div.add div.quantidade {
 div.center {
     display:flex;
     align-items:end;
-    height:100%;
 }
 
 div.fixed {
@@ -1005,7 +1047,7 @@ div.termos p{
     }
 
     /*Pesquisa*/
-    div.selecionar input#pesquisa {
+    div.selecionar input.pesquisa {
         padding:15px;
         width:700px;
     }
@@ -1048,13 +1090,26 @@ div.termos p{
     }
 
     main div#retirou {
-        width:90%;
-        margin:auto;
+        width:50%;
     }
 
     main div#entregar {
-        width:90%;
-        margin:auto;
+        width:50%;
+    }
+
+    div.pes-ite {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width:900px;
+        margin: auto;
+    }
+
+    div.pes-ite input.pesquisa {
+        display:block;
+        margin:0px 5px;
+        padding:15px;
+        width:40%;
     }
 
     div.position span#fecha {
@@ -1086,9 +1141,18 @@ div.termos p{
         font-size:1.7em;
     }
 
-    div.food-img-2 img {
-        width:180px;
-    }
+    div.food-img-2 img{
+        width:40%;
+        border-radius:5px;
+        box-shadow:1px 1px 4px rgba(0, 0, 0, 0.171);
+        margin:0px 5px;
+     }
+    
+     div.food-img-2  p.descricao {
+        width:50%;
+        font-size:1em;
+        margin:5px;
+     }
 
     /*Pedidos ou Comida*/
 
@@ -1146,6 +1210,7 @@ div.termos p{
         border-radius:5px;
         padding:10px;
     }
+
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
@@ -1165,6 +1230,10 @@ div.termos p{
         overflow:auto;
     }
 
+    div.procurar {
+        display:none;
+    }
+
      nav#nav-1 ul.lista{
         display:none;
     }
@@ -1180,6 +1249,25 @@ div.termos p{
     div#icons {
         display:flex;
         align-items:center;
+    }
+
+    div#pesquisa {
+        display:flex;
+        align-items: center;
+    }
+
+    div#pesquisa span {
+        font-size:36px;
+        color:var(--cor2);
+    }
+
+    div#pesquisa input {
+        padding:15px;
+        border-radius:30px;
+        width:400px;
+        border:0px;
+        font-size:1.2em;
+        display:block;
     }
 
     div#icons span {
@@ -1238,7 +1326,7 @@ div.termos p{
     }
 
     /*Pesquisa*/
-    div.selecionar input#pesquisa {
+    div.selecionar input.pesquisa {
         padding:15px;
         width:700px;
     }
@@ -1281,13 +1369,26 @@ div.termos p{
     }
 
     main div#retirou {
-        max-width:800px;
-        margin: auto;
+        width:50%;
     }
 
     main div#entregar {
-        max-width:800px;
+        width:50%;
+    }
+
+    div.pes-ite {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width:900px;
         margin:auto;
+    }
+
+    div.pes-ite input.pesquisa {
+        display:block;
+        margin:0px 5px;
+        padding:15px;
+        width:40%;
     }
 
     div.position span#fecha {
@@ -1319,9 +1420,18 @@ div.termos p{
         font-size:1.7em;
     }
 
-    div.food-img-2 img {
-        width:180px;
-    }
+    div.food-img-2 img{
+        width:50%;
+        border-radius:5px;
+        box-shadow:1px 1px 4px rgba(0, 0, 0, 0.171);
+        margin:0px 5px;
+     }
+    
+     div.food-img-2  p.descricao {
+        width:50%;
+        font-size:1em;
+        margin:5px;
+     }
 
     /*Pedidos ou Comida*/
 
@@ -1432,10 +1542,33 @@ div.termos p{
             cursor:pointer;
             color:var(--cor2)
         }
+
+        div#pesquisa {
+            display:flex;
+            align-items: center;
+        }
+    
+        div#pesquisa span {
+            font-size:36px;
+            color:var(--cor2);
+        }
+    
+        div#pesquisa input {
+            padding:15px;
+            border-radius:30px;
+            width:400px;
+            border:0px;
+            font-size:1.2em;
+            display:block;
+        }
     /*NAV ICONS*/
     nav div.cadastro {
         display:flex;
         font-size:1.2em;
+    }
+
+    div.procurar {
+        display:none;
     }
 
     nav div.cadastro span{
@@ -1456,7 +1589,7 @@ div.termos p{
     }
 
     div#logo {
-        width:70%;
+        width:50%;
     }
 
     div#logo img {
@@ -1473,7 +1606,7 @@ div.termos p{
     }
 
     /*Pesquisa*/
-    div.selecionar input#pesquisa {
+    div.selecionar input.pesquisa {
         padding:15px;
         width:700px;
     }
@@ -1516,11 +1649,24 @@ div.termos p{
     }
 
     main div#retirou {
-        max-width:600px;
+        width:600px;
     }
 
     main div#entregar {
-        max-width:600px;
+        width:600px;
+    }
+
+    div.pes-ite {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div.pes-ite input.pesquisa {
+        display:block;
+        margin:0px 5px;
+        width:400px;
+        padding:15px;
     }
 
     div.position span#fecha {
@@ -1544,16 +1690,26 @@ div.termos p{
 
     div.container {
         width:32%;
-        margin:5px;
+        margin:5px 8px;
     }
 
     div.title-food h3 {
         font-size:1.7em;
     }
 
-    div.food-img-2 img {
-        width:180px;
-    }
+    div.food-img-2 img{
+        width:50%;
+        border-radius:5px;
+        box-shadow:1px 1px 4px rgba(0, 0, 0, 0.171);
+        margin:0px 5px;
+     }
+    
+     div.food-img-2  p.descricao {
+        width:50%;
+        font-size:1em;
+        margin:5px;
+     }
+
 
     /*Pedidos ou Comida*/
 
