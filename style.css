@@ -128,7 +128,7 @@ nav div#carrinho {
     cursor:pointer;
 }
 
-nav div#m-1 span {
+nav div.m-1 span {
     margin:0px 5px;
     cursor:pointer;
     font-size:36px;
@@ -627,6 +627,65 @@ nav#nav-1 ul.lista {
     align-items: center;
 }
 
+div#escolha-de-categorias {
+    display:flex;
+    margin:0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.logo img{
+    width:80px;
+    border-radius:10px;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.197);
+    display:none;
+}
+
+div.chose {
+    background-color: #591202;
+    padding:10px;
+    cursor:pointer;
+    display:none;
+}
+
+div.chose h3 {
+    display:flex;
+    justify-content: space-between;
+}
+
+ul#opcao {
+    position: fixed;
+    background-color:lightgray;
+    list-style-type:none;
+    overflow-y: auto;
+    height:200px;
+    top:17%;
+    left:0%;
+    display:none;
+}
+
+ul#opcao li.op {
+    padding:10px;
+    border-bottom:1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li.op span {
+    font-size:20px;
+    color:rgb(108, 107, 107);
+}
+
+li.op a {
+    text-decoration:none;
+    color:rgb(79, 78, 78);
+}
+
+div#icons {
+    display:none;
+}
+
 ul.lista li {
     margin:10px 0px;
     padding:0px 20px;
@@ -653,6 +712,7 @@ div.categorias {
     background-color:var(--cor2);
     padding:10px 0px;
     border-radius:5px;
+    box-shadow:1px 1px 3px rgba(0, 0, 0, 0.27);
 }
 
 div.categorias h2 {
@@ -836,6 +896,7 @@ div.add div.quantidade {
 div.center {
     display:flex;
     align-items:end;
+    height:100%;
 }
 
 div.fixed {
@@ -903,10 +964,6 @@ div.termos p{
     nav {
         padding:10px;
     }
-    /*Nav menu secundario*/
-    nav#nav-1 ul.lista{
-        display:none;
-    }
     /*NAV ICONS*/
     nav div.cadastro {
         display:flex;
@@ -943,7 +1000,7 @@ div.termos p{
     }
 
     div#logo input {
-        padding:15px;
+        padding:10px;
         font-size:1.1em;
     }
 
@@ -1103,6 +1160,43 @@ div.termos p{
     nav {
         padding:10px;
     }
+     /*Nav menu secundario*/
+    nav#nav-1 {
+        overflow:auto;
+    }
+
+     nav#nav-1 ul.lista{
+        display:none;
+    }
+
+    div.chose {
+        display:block;
+    }
+
+    div.logo img {
+        display:block;
+    }
+
+    div#icons {
+        display:flex;
+        align-items:center;
+    }
+
+    div#icons span {
+        font-size:32px;
+        cursor:pointer;
+        color:var(--cor2)
+    }
+
+    div#icons div:hover {
+        background:none;
+    }
+
+    div#icons i {
+        font-size:30px;
+        cursor:pointer;
+        color:var(--cor2)
+    }
     /*NAV ICONS*/
     nav div.cadastro {
         display:flex;
@@ -1139,7 +1233,7 @@ div.termos p{
     }
 
     div#logo input {
-        padding:15px;
+        padding:10px;
         font-size:1.1em;
     }
 
@@ -1301,6 +1395,43 @@ div.termos p{
     nav {
         padding:10px;
     }
+         /*Nav menu secundario*/
+         nav#nav-1 {
+            overflow:auto;
+        }
+    
+         nav#nav-1 ul.lista{
+            display:none;
+        }
+    
+        div.chose {
+            display:block;
+        }
+    
+        div.logo img {
+            display:block;
+        }
+    
+        div#icons {
+            display:flex;
+            align-items:center;
+        }
+    
+        div#icons span {
+            font-size:32px;
+            cursor:pointer;
+            color:var(--cor2)
+        }
+    
+        div#icons div:hover {
+            background:none;
+        }
+    
+        div#icons i {
+            font-size:30px;
+            cursor:pointer;
+            color:var(--cor2)
+        }
     /*NAV ICONS*/
     nav div.cadastro {
         display:flex;
@@ -1337,7 +1468,7 @@ div.termos p{
     }
 
     div#logo input {
-        padding:15px;
+        padding:10px;
         font-size:1.1em;
     }
 
@@ -1385,13 +1516,11 @@ div.termos p{
     }
 
     main div#retirou {
-        max-width:800px;
-        margin: auto;
+        max-width:600px;
     }
 
     main div#entregar {
-        max-width:800px;
-        margin:auto;
+        max-width:600px;
     }
 
     div.position span#fecha {
@@ -1403,9 +1532,8 @@ div.termos p{
     div.categorias {
         display:flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        max-width:900px;
-        margin:10px auto;
+        max-width:100%;
+        margin:20px 0px;
         padding:10px;
     }
 
@@ -1415,7 +1543,7 @@ div.termos p{
     }
 
     div.container {
-        width:47%;
+        width:32%;
         margin:5px;
     }
 
