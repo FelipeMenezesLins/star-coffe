@@ -47,20 +47,20 @@ retiradaButtons.forEach((retiradaBtn) => {
 });
 
 dive.addEventListener('click', () => {
-    if (lupa[3] && sub[0]) {
-        lupa[3].style.display = 'block';
+    if (lupa[2] && sub[0]) {
+        lupa[2].style.display = 'block';
         sub[0].style.display = 'block';
     }
 });
 
 divr.addEventListener('click', () => {
-    if (lupa[3] && sub[1]) {
-        lupa[3].style.display = 'block';
+    if (lupa[2] && sub[1]) {
+        lupa[2].style.display = 'block';
         sub[1].style.display = 'block';
     }
 });
 
 
 fecha.addEventListener('click', ()=> {
-    lupa[3].style.display = 'none'
+    lupa[2].style.display = 'none'
 })
