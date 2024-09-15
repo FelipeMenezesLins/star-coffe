@@ -5,7 +5,7 @@ let divr = document.getElementById('retirou');
 let fecha = document.getElementById('fecha')
 let lupa = document.querySelectorAll('.lupa');
 let sub = document.querySelectorAll('.subs');
-
+let aparecer = document.getElementById('aparecer')
 
 // Log para verificar a quantidade de elementos
 entregaButtons.forEach((entregaBtn) => {
@@ -61,6 +61,15 @@ divr.addEventListener('click', () => {
 });
 
 
-fecha.addEventListener('click', ()=> {
-    lupa[2].style.display = 'none'
+lupa[2].addEventListener('click', ()=> {
+    if(lupa[2].style.display == 'block'){
+        lupa[2].style.display = 'none'
+    }
 })
+
+aparecer.addEventListener('click', (aparecer)=> {
+    aparecer.stopPropagation()
+})
+
+
+

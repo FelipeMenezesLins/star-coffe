@@ -5,6 +5,10 @@ let carrinho = document.getElementById('carrinho')
 let compras = document.getElementById('compras')
 let a = document.querySelectorAll('.ancora')
 
+selecionar.forEach((selecionar)=> {
+    selecionar.style.display = 'none'
+})
+
 
 procurar.forEach((procurar)=> {
     procurar.addEventListener('click', () => {

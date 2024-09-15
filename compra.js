@@ -52,3 +52,15 @@ sair.forEach(sair => {
         conteudo.forEach(cont => cont.style.display = 'none');
     });
 });
+
+principal.addEventListener('click', ()=> {
+    principal.style.display = 'none'
+})
+
+conteudo.forEach((conteudo)=> {
+    conteudo.addEventListener('click', (para)=> {
+        para.stopPropagation()
+    })
+})
+
+
