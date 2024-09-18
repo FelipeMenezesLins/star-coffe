@@ -917,8 +917,13 @@ div.pagamento {
     padding:0px;
 }
 
+div.pagamento ul {
+    overflow-y: auto;
+    max-height:200px;
+}
+
 div.pagamento ul li {
-    border-bottom:1px solid rgb(221, 221, 221);
+    border-bottom:1px solid rgb(170, 169, 169);
     display:flex;
     padding:10px;
     align-items: center;
@@ -946,13 +951,16 @@ div.add div.ir-carrinho {
     margin:10px;
 }
 
+
 div.center {
-    display:flex;
-    align-items:end;
+   position:fixed;
+   bottom:0;
+   left:0;
+   width:100%;
 }
 
 div.fixed {
-    background-color:lightgrey;
+    background-color:rgb(220, 218, 218);
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -1029,6 +1037,10 @@ div.termos p{
 
     nav div#carrinho {
         display:block;
+    }
+
+    nav div.procurar span{
+        display: block;
     }
 
     nav div#carrinho span {
@@ -1202,6 +1214,11 @@ div.termos p{
         width:50%;
         overflow-y:auto;
         background-color:lightgrey;
+    }
+
+    div.center {
+        width:50%;
+        left:50%;
     }
 
     div.fixed {
@@ -1421,8 +1438,8 @@ div.termos p{
         margin-bottom:20px;
     }
 
-    div.container {
-        width:47%;
+    div.container  {
+        width:46%;
         margin:5px;
     }
 
@@ -1482,6 +1499,11 @@ div.termos p{
         width:50%;
         overflow-y:auto;
         background-color:lightgrey;
+    }
+
+    div.center {
+        width:50%;
+        left:50%;
     }
 
     div.fixed {
@@ -1760,6 +1782,11 @@ div.termos p{
         width:50%;
         overflow-y:auto;
         background-color:lightgrey;
+    }
+
+    div.center {
+        width:50%;
+        left:50%;
     }
 
     div.fixed {
