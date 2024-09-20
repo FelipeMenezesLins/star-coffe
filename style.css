@@ -687,6 +687,7 @@ div.chose {
     padding:10px;
     cursor:pointer;
     display:none;
+    border-radius:5px;
 }
 
 div.chose h3 {
@@ -695,22 +696,30 @@ div.chose h3 {
 }
 
 ul#opcao {
-    position: fixed;
-    background-color:lightgray;
-    list-style-type:none;
+    position:fixed;
+    top: 17%; /* Garante que o menu começa no topo da tela */
+    left: 0; /* Garante que o menu fica alinhado à esquerda */
+    background-color: lightgray;
+    list-style-type: none;
     overflow-y: auto;
-    height:200px;
-    top:17%;
-    left:0%;
-    display:none;
+    height: 200px;
+    /* Escondido acima da tela */
+    opacity: 0; /* Invisível inicialmente */
+    transition: transform 0.4s ease, opacity 0.4s ease; /* Animações suaves */
+    z-index: 10;
+    transform: translateY(0%);
 }
 
-ul#opcao li.op {
-    padding:10px;
-    border-bottom:1px solid gray;
+.apresentar { /* Move o menu para a posição original */
+    transform: translateY(17%);
+}
+
+ul#opcao li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding:10px;
+    border-bottom:1px solid rgb(18, 18, 18);
 }
 
 li.op span {
@@ -718,9 +727,9 @@ li.op span {
     color:rgb(108, 107, 107);
 }
 
-li.op a {
+a.op {
     text-decoration:none;
-    color:rgb(79, 78, 78);
+    color:rgb(12, 12, 12);
 }
 
 div#icons {
@@ -915,6 +924,7 @@ div.descricao-1 h3 {
 
 div.pagamento {
     padding:0px;
+    overflow-y:auto;
 }
 
 div.pagamento ul {
@@ -928,6 +938,7 @@ div.pagamento ul li {
     padding:10px;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 div.add {
@@ -949,6 +960,23 @@ div.add div.quantidade {
 
 div.add div.ir-carrinho {
     margin:10px;
+}
+
+div.observações {
+    padding: 10px;
+    height:140px;
+    color:var(--cor2);
+    display:flex;
+}
+
+div.observações textarea {
+    height:20px;
+    margin-left:5px;
+    border:0px;
+    border-bottom: 2px solid var(--cor2);
+    background-color: lightgray;
+    width:90%;
+    outline: none;
 }
 
 

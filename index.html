@@ -236,7 +236,7 @@
             </div>
             <ul class="lista">
                 <li><a href="#inverno">Lançamentos de Inverno</a></li>
-                <li><a href="#bebidas-g">Bebidas Geladas</a></li>
+                <li><a href="#bebidas-g">Bebidas Geladas</li></a>
                 <li><a href="#frappuccino">Frappuccino</a></li>
                 <li><a href="#">Bebidas Quentes </a></li>
                 <li><a href="#">Sanduíches</a></li>
@@ -269,46 +269,24 @@
         </nav>
         <!--Lista de categorias-->
         <ul id="opcao">
-            <li class="op"><a href="#inverno">Lançamentos de Inverno</a>
+            <a href="#inverno" class="op"><li>Lançamentos de inverno
                 <span class="material-symbols-outlined">
                     arrow_forward_ios
                 </span>
             </li>
-            <li class="op"><a href="#bebidas-g">Bebidas Geladas</a>
+            </a>
+            <a href="#bebidas-g" class="op"><li>Bebidas Geladas
                 <span class="material-symbols-outlined">
                     arrow_forward_ios
                 </span>
             </li>
-            <li class="op"><a href="#frappuccino">Frappuccino</a>
+            </a>
+            <a href="#frappuccino" class="op"><li>frappuccino
                 <span class="material-symbols-outlined">
                     arrow_forward_ios
                 </span>
             </li>
-            <li class="op"><a href="#">Lançamentos de inverno</a>
-                <span class="material-symbols-outlined">
-                    arrow_forward_ios
-                </span>
-            </li>
-            <li class="op"><a href="#">Lançamentos de inverno</a>
-                <span class="material-symbols-outlined">
-                    arrow_forward_ios
-                </span>
-            </li>
-            <li class="op"><a href="#">Lançamentos de inverno</a>
-                <span class="material-symbols-outlined">
-                    arrow_forward_ios
-                </span>
-            </li>
-            <li class="op"><a href="#">Lançamentos de inverno</a>
-                <span class="material-symbols-outlined">
-                    arrow_forward_ios
-                </span>
-            </li>
-            <li class="op"><a href="#">Lançamentos de inverno</a>
-                <span class="material-symbols-outlined">
-                    arrow_forward_ios
-                </span>
-            </li>
+            </a>
         </ul>
         <!--Entrega e Retirada-->
         <div class="lupa">
@@ -679,6 +657,10 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="observações">
+                        <h3>Obs:</h3>
+                        <textarea rows="4" cols="50"></textarea>
+                    </div>
                     <div class="center">
                         <div class="fixed">
                             <div class="add">
@@ -760,6 +742,7 @@
                 </div>
             </div>
         </div>
+
         <div class="conteudo">
             <div class="food">
                     <div class="sub-food">
@@ -822,6 +805,7 @@
                 </div>
             </div>
         </div>
+
         <div class="conteudo">
             <div class="food">
                     <div class="sub-food">
@@ -836,7 +820,7 @@
                             close
                         </span>
                         <div class="descricao-1">
-                            <h3>Canudo doce de leite</h3>
+                            <h3>Canudo de doce de leite</h3>
                             <p>Canudos crocantes recheados com doce de leite cremoso.</p>
                         </div>
                     </div>
@@ -844,62 +828,38 @@
                     <ul>
                         <li>
                             <h4>Adicional:</h4>
-                            <p>Escolha até 2 opções</p>
-                        </li>
-                        <li>
-                            <div>
-                                <h4>Doce de leite</h4>
-                                <p>+R$3,50</p>
-                            </div>
-                            <div class="add">
-                                <span class="material-symbols-outlined">
-                                    remove
-                                </span>
-                                <div class="quantidade">
-                                    0
-                                </div>
-                                <span class="material-symbols-outlined">
-                                    add
-                                </span>
-                            </div>
+                            <p>Escolha até 1 opções</p>
                         </li>
                         <li>
                             <div>
                                 <h4>Nutella</h4>
-                                <p>+R$3,50</p>
+                                <p class="valor-add">+R$3,50</p>
                             </div>
                             <div class="add">
-                                <span class="material-symbols-outlined">
-                                    remove
-                                </span>
-                                <div class="quantidade">
-                                    0
-                                </div>
-                                <span class="material-symbols-outlined">
-                                    add
-                                </span>
+                                <input type="checkbox" class="box" data-preco="3.50">
                             </div>
                         </li>
                     </ul>
                     <div class="center">
                         <div class="fixed">
                             <div class="add">
-                                <span class="material-symbols-outlined">
+                                <span class="material-symbols-outlined tirar">
                                     remove
                                 </span>
-                                <div class="quantidade">
+                                <div class="ir-carrinho">
                                     1
                                 </div>
-                                <span class="material-symbols-outlined">
+                                <span class="material-symbols-outlined evento">
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar">Adicionar R$10,00</button>
+                            <button class="adicionar" data-preco="10.00">Adicionar R$10,00</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+       
         <div class="conteudo">
             <div class="food">
                     <div class="sub-food">
@@ -914,7 +874,7 @@
                             close
                         </span>
                         <div class="descricao-1">
-                            <h3>Hot dog clasico</h3>
+                            <h3>Hot Dog Classico</h3>
                             <p>Cachorro-quente clássico: pão macio, salsicha suculenta, purê de batata, batata-palha, ketchup e maionese.</p>
                         </div>
                     </div>
@@ -922,62 +882,94 @@
                     <ul>
                         <li>
                             <h4>Adicional:</h4>
-                            <p>Escolha até 2 opções</p>
+                            <p>Escolha até 1 opções</p>
                         </li>
                         <li>
                             <div>
-                                <h4>Purê</h4>
-                                <p>+R$1,50</p>
+                                <h4>Batata frita</h4>
+                                <p class="valor-add">+R$4,00</p>
                             </div>
                             <div class="add">
-                                <span class="material-symbols-outlined">
-                                    remove
-                                </span>
-                                <div class="quantidade">
-                                    0
-                                </div>
-                                <span class="material-symbols-outlined">
-                                    add
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <h4>Batata Palha</h4>
-                                <p>+R$1,50</p>
-                            </div>
-                            <div class="add">
-                                <span class="material-symbols-outlined">
-                                    remove
-                                </span>
-                                <div class="quantidade">
-                                    0
-                                </div>
-                                <span class="material-symbols-outlined">
-                                    add
-                                </span>
+                                <input type="checkbox" class="box" data-preco="4.00">
                             </div>
                         </li>
                     </ul>
                     <div class="center">
                         <div class="fixed">
                             <div class="add">
-                                <span class="material-symbols-outlined">
+                                <span class="material-symbols-outlined tirar">
                                     remove
                                 </span>
-                                <div class="quantidade">
+                                <div class="ir-carrinho">
                                     1
                                 </div>
-                                <span class="material-symbols-outlined">
+                                <span class="material-symbols-outlined evento">
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar">Adicionar R$9,00</button>
+                            <button class="adicionar" data-preco="9.00">Adicionar R$9,00</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--BEBIDAS GELADAS-->
+
+        <div class="conteudo">
+            <div class="food">
+                    <div class="sub-food">
+                        <img src="imagens/café-latte-gelado.webp">
+                        <span class="material-symbols-outlined compartilhar">
+                            share
+                        </span>
+                        <span class="material-symbols-outlined tela-cheia">
+                            fullscreen
+                        </span>
+                        <span class="material-symbols-outlined sair-2">
+                            close
+                        </span>
+                        <div class="descricao-1">
+                            <h3>Café Latte Gelado</h3>
+                            <p>Café expresso,Leite gelado,Gelo,Adoçante ou açúcar (opcional)</p>
+                        </div>
+                    </div>
+                <div class="pagamento">
+                    <ul>
+                        <li>
+                            <h4>Adicional:</h4>
+                            <p>Escolha até 1 opções</p>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>Nutella</h4>
+                                <p class="valor-add">+R$3,50</p>
+                            </div>
+                            <div class="add">
+                                <input type="checkbox" class="box" data-preco="3.50">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="center">
+                        <div class="fixed">
+                            <div class="add">
+                                <span class="material-symbols-outlined tirar">
+                                    remove
+                                </span>
+                                <div class="ir-carrinho">
+                                    1
+                                </div>
+                                <span class="material-symbols-outlined evento">
+                                    add
+                                </span>
+                            </div>
+                            <button class="adicionar" data-preco="12.00">Adicionar R$12,00</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 </section> 
     </main>
     <footer>
