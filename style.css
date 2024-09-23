@@ -704,7 +704,7 @@ ul#opcao {
     overflow-y: auto;
     height: 200px;
     /* Escondido acima da tela */
-    opacity: 0; /* Invisível inicialmente */
+    opacity:0;/* Invisível inicialmente */
     transition: transform 0.4s ease, opacity 0.4s ease; /* Animações suaves */
     z-index: 10;
     transform: translateY(0%);
@@ -844,29 +844,52 @@ div.valor-food span {
     border:0px;
     cursor:pointer;
 }
-
 section#pedido-1 {
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    background-color:lightgray;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
     position: fixed;
-    display:none;
+    opacity: 0;
     z-index: 100;
-    overflow-y:auto;
+    overflow-y: auto;
     box-sizing: border-box;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: translateY(100%);
+}
+
+.elemento-ativo {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 section#pedido-1 div.c-1 {
-    width:100%;
-    height:100%;
-    position:relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 div.conteudo {
-    height:100%;
-    display:none;
+    height: 100%; /* Garante que ocupe 100% da altura */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    position: relative; /* Para fluxo de layout */
+    display: flex; /* Para centralizar conteúdo */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transição para animação */
+}
+
+.conteudo-animation {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none; /* Classe para ocultar elementos */
 }
 
 div.food {
@@ -1207,17 +1230,19 @@ div.termos p{
     /*Pedidos ou Comida*/
 
     section#pedido-1 {
-        background: rgba(0, 0, 0, 0.303);
+        background:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     div.conteudo {
         position: relative;
-        top:50%;
-        left:50%;
+        top:0%;
+        left:0%;
         display:flex;
         height:auto;
         max-width:720px;
-        transform:translate(-50%, -50%);
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.298);
     }
 
@@ -1490,19 +1515,21 @@ div.termos p{
 
     /*Pedidos ou Comida*/
 
+
     section#pedido-1 {
-        background: rgba(0, 0, 0, 0.303);
+        background:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
 
     div.conteudo {
         position: relative;
-        top:50%;
-        left:50%;
+        top:0%;
+        left:0%;
         display:flex;
         height:auto;
         max-width:720px;
-        transform:translate(-50%, -50%);
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.298);
     }
 
@@ -1774,18 +1801,19 @@ div.termos p{
     /*Pedidos ou Comida*/
 
     section#pedido-1 {
-        background: rgba(0, 0, 0, 0.303);
+        background:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
 
     div.conteudo {
         position: relative;
-        top:50%;
-        left:50%;
+        top:0%;
+        left:0%;
         display:flex;
         height:auto;
         max-width:720px;
-        transform:translate(-50%, -50%);
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.298);
     }
 

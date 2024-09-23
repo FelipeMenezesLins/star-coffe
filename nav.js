@@ -1,6 +1,6 @@
 let categorias = document.querySelectorAll('.chose')
 let ul = document.getElementById('opcao')
-console.log(ul)
+
 
 window.addEventListener('scroll', function() {
     const nav = document.getElementById('nav-1');
@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
       nav.classList.add('show');
     } else {
       nav.classList.remove('show');
-      ul.classList.remove('apresentar')
+      ul.style.display ='none'
     }
   });
 
@@ -19,6 +19,7 @@ window.addEventListener('scroll', function() {
     categoria.addEventListener('click', () => {
         // Certifique-se de que o ul existe
         if (ul) {
+            ul.style.display = 'block'
             ul.style.opacity = '1'
             ul.classList.add('apresentar');
         }
