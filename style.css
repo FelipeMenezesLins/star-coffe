@@ -948,6 +948,7 @@ div.descricao-1 h3 {
 div.pagamento {
     padding:0px;
     overflow-y:auto;
+    max-height:150px;
 }
 
 div.pagamento ul {
@@ -987,7 +988,6 @@ div.add div.ir-carrinho {
 
 div.observações {
     padding: 10px;
-    height:140px;
     color:var(--cor2);
     display:flex;
 }
@@ -1000,6 +1000,18 @@ div.observações textarea {
     background-color: lightgray;
     width:90%;
     outline: none;
+    overflow:hidden;
+    resize: none;
+}
+
+div.spancon {
+    display:flex;
+    justify-content: end;
+    padding:0px 10px;
+}
+
+span.caracteres {
+    color:rgb(101, 101, 101);
 }
 
 
@@ -1265,8 +1277,9 @@ div.termos p{
 
     div.pagamento {
         width:50%;
-        overflow-y:auto;
-        background-color:lightgrey;
+        max-height:100%;
+        
+        background-color:lightgray;
     }
 
     div.center {
@@ -1549,11 +1562,11 @@ div.termos p{
         width:50%;
   
     }
-
     div.pagamento {
         width:50%;
-        overflow-y:auto;
-        background-color:lightgrey;
+        max-height:100%;
+        
+        background-color:lightgray;
     }
 
     div.center {
@@ -1836,8 +1849,9 @@ div.termos p{
 
     div.pagamento {
         width:50%;
-        overflow-y:auto;
-        background-color:lightgrey;
+        max-height:100%;
+        
+        background-color:lightgray;
     }
 
     div.center {
