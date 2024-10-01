@@ -947,8 +947,6 @@ div.descricao-1 h3 {
 
 div.pagamento {
     padding:0px;
-    overflow-y:auto;
-    max-height:150px;
 }
 
 div.pagamento ul {
