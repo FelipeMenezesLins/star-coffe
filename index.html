@@ -29,6 +29,7 @@
                 </div>
                 <div id="carrinho">
                     <i class="material-icons">shopping_cart</i>
+                    <div id="cart-cont">0</div>
                 </div>
                 <div class="m-1">
                     <span class="material-icons">menu</span>
@@ -40,15 +41,18 @@
                     <p>Compras adicionadas</p>
                 </div>
                 <ul id="lista" placeholder="Nenhuma compra efetuada">
-                    <p>Nenhuma item no carrinho</p>
+                    <p id="nada">Nenhuma compra</p>
                 </ul>
                 <div class="subtotal-content">
                     <div class="subtotal">Subtotal:</div>
-                    <div class="subtotal-valor">R$ 0,00</div>
+                    <div id="subtotal-valor">R$ 0,00</div>
                 </div>
                 <div class="total-content">
                     <div class="total">TOTAL:</div>
-                    <div class="total-valor">R$ 0,00</div>
+                    <div id="total-valor">R$ 0,00</div>
+                </div>
+                <div id="confirmar">
+                    <button id="btn-comprar">Confirmar</button>
                 </div>
             </div>
         </div>
@@ -260,7 +264,7 @@
                     <i class="material-icons">sell</i>
                 </div>
                 <div id="carrinho">
-                    <i class="material-icons">shopping_cart</i>
+                    <a href="#carrinho"><i class="material-icons">shopping_cart</i></a>
                 </div>
                 <div class="m-1">
                     <span class="material-icons">menu</span>
@@ -366,7 +370,7 @@
 
             <div id="inverno" class="categorias ancora">
                 <h2>Lançamentos do Inverno</h2>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Brownie</h3>
                     </div>
@@ -376,10 +380,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $12,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Donuts</h3>
                     </div>
@@ -389,10 +393,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $8,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Sorvete Choco</h3>
                     </div>
@@ -402,10 +406,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $14,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Canudo doce de leite</h3>
                     </div>
@@ -415,10 +419,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $10,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Hot dog clasico</h3>
                     </div>
@@ -428,14 +432,14 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $9,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
             </div>
 
             <div id="bebidas-g" class="categorias ancora">
                 <h2>Bebidas Geladas</h2>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Café Latte Gelado</h3>
                     </div>
@@ -445,10 +449,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $12,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Cappuccino Gelado</h3>
                     </div>
@@ -458,10 +462,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $8,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Cold Brew Balnilha</h3>
                     </div>
@@ -471,10 +475,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $14,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Iced Chai Latte</h3>
                     </div>
@@ -484,10 +488,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $10,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Iced Vanilla Latte</h3>
                     </div>
@@ -497,10 +501,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $9,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Limonada Caseira</h3>
                     </div>
@@ -510,7 +514,7 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $9,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
             </div>
@@ -518,7 +522,7 @@
 
             <div id="frappuccino" class="categorias ancora">
                 <h2>Frappuccino</h2>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Frappuccino Caramelo</h3>
                     </div>
@@ -528,10 +532,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $12,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Frappuccino Doce Leite</h3>
                     </div>
@@ -541,10 +545,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $8,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Frappuccino Morango</h3>
                     </div>
@@ -554,10 +558,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $10,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Frappuccino Nutella</h3>
                     </div>
@@ -567,10 +571,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $9,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Frappuccino Oreo</h3>
                     </div>
@@ -580,10 +584,10 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $9,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
-                <div class="container ancora">
+                <div class="container ancora colocar">
                     <div class="title-food">
                         <h3>Frappuccino Chocolate</h3>
                     </div>
@@ -593,7 +597,7 @@
                     </div>
                     <div class="valor-food">
                         <p>Valor:  $9,00</p>
-                    <span class="material-symbols-outlined colocar">add</span>
+                    <span class="material-symbols-outlined">add</span>
                     </div>
                 </div>
             </div>
@@ -677,7 +681,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="12.00">Adicionar R$12,00</button>
+                            <button class="adicionar" data-preco="12.00" data-name="Brownie">Adicionar R$12,00</button>
                         </div>
                     </div>
                 </div>
@@ -746,7 +750,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="8.00">Adicionar R$8,00</button>
+                            <button class="adicionar" data-preco="8.00" data-name="Donuts">Adicionar R$8,00</button>
                         </div>
                     </div>
                 </div>
@@ -816,7 +820,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="14.00">Adicionar R$14,00</button>
+                            <button class="adicionar" data-preco="14.00" data-name="Sorverte Choco">Adicionar R$14,00</button>
                         </div>
                     </div>
                 </div>
@@ -877,7 +881,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="10.00">Adicionar R$10,00</button>
+                            <button class="adicionar" data-preco="10.00" data-name="Canudo de doce de leite">Adicionar R$10,00</button>
                         </div>
                     </div>
                 </div>
@@ -938,7 +942,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="9.00">Adicionar R$9,00</button>
+                            <button class="adicionar" data-preco="9.00" data-name="Hot dog classico">Adicionar R$9,00</button>
                         </div>
                     </div>
                 </div>
@@ -1001,7 +1005,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="12.00">Adicionar R$12,00</button>
+                            <button class="adicionar" data-preco="12.00" data-name="Café Latte Gelado">Adicionar R$12,00</button>
                         </div>
                     </div>
                 </div>
@@ -1062,7 +1066,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="8.00">Adicionar R$8,00</button>
+                            <button class="adicionar" data-preco="8.00" data-name="Cappuccino Gelado">Adicionar R$8,00</button>
                         </div>
                     </div>
                 </div>
@@ -1111,7 +1115,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="14.00">Adicionar R$14,00</button>
+                            <button class="adicionar" data-preco="14.00" data-name="Cold Brew Balnilha">Adicionar R$14,00</button>
                         </div>
                     </div>
                 </div>
@@ -1160,7 +1164,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="10.00">Adicionar R$10,00</button>
+                            <button class="adicionar" data-preco="10.00" data-name="Iced Chai Latte">Adicionar R$10,00</button>
                         </div>
                     </div>
                 </div>
@@ -1209,7 +1213,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="9.00">Adicionar R$9,00</button>
+                            <button class="adicionar" data-preco="9.00" data-name="Iced Vanilla Latte">Adicionar R$9,00</button>
                         </div>
                     </div>
                 </div>
@@ -1258,7 +1262,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="9.00">Adicionar R$9,00</button>
+                            <button class="adicionar" data-preco="9.00" data-name="Limonada Caseira">Adicionar R$9,00</button>
                         </div>
                     </div>
                 </div>
@@ -1323,7 +1327,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="12.00">Adicionar R$12,00</button>
+                            <button class="adicionar" data-preco="12.00" data-name="Frappuccino Caramelo">Adicionar R$12,00</button>
                         </div>
                     </div>
                 </div>
@@ -1384,7 +1388,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="8.00">Adicionar R$8,00</button>
+                            <button class="adicionar" data-preco="8.00" data-name="Frappuccino Doce Leite">Adicionar R$8,00</button>
                         </div>
                     </div>
                 </div>
@@ -1445,7 +1449,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="10.00">Adicionar R$10,00</button>
+                            <button class="adicionar" data-preco="10.00" data-name="Frappuccino Morango">Adicionar R$10,00</button>
                         </div>
                     </div>
                 </div>
@@ -1506,7 +1510,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="9.00">Adicionar R$9,00</button>
+                            <button class="adicionar" data-preco="9.00" data-name="Frappuccino Nutella">Adicionar R$9,00</button>
                         </div>
                     </div>
                 </div>
@@ -1567,7 +1571,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="9.00">Adicionar R$9,00</button>
+                            <button class="adicionar" data-preco="9.00" data-name="Frappuccino Oreo">Adicionar R$9,00</button>
                         </div>
                     </div>
                 </div>
@@ -1628,7 +1632,7 @@
                                     add
                                 </span>
                             </div>
-                            <button class="adicionar" data-preco="9.00">Adicionar R$9,00</button>
+                            <button class="adicionar" data-preco="9.00" data-name="Frappuccino Chocolate">Adicionar R$9,00</button>
                         </div>
                     </div>
                 </div>
@@ -1656,5 +1660,6 @@
     <script src="men.js"></script>
     <script src="adicionar.js"></script>
     <script src="obs.js"></script>
+    <script src="carrinho.js"></script>
 </body>
 </html>

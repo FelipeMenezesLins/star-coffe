@@ -5,6 +5,7 @@ let quantidade = document.querySelectorAll('.ir-carrinho');
 let adicionar = document.querySelectorAll('.adicionar');
 let checkboxesAdicionais = document.querySelectorAll('.box'); // Ajustado para a classe correta
 
+
 soma.forEach((btn, index) => {
     btn.addEventListener('click', () => {
         let num = parseInt(quantidade[index].textContent);
